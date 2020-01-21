@@ -1,0 +1,22 @@
+language: python
+
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+
+install:
+  # Anaconda3
+  - wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+  - bash Anaconda3-2019.10-Linux-x86_64.sh -b -p ${HOME}/anaconda3
+  - echo 'export PATH="${HOME}/anaconda3/bin:$PATH"' >> ${HOME}/.bashrc
+  - . ${HOME}/.bashrc
+
+script:
+  - conda env create -f environment.yml
+  - python -m json.tool r-neat-genetic-interactions-physical-interactions-no-ko-dups.ipynb
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
