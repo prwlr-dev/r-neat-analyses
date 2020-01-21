@@ -1,0 +1,7 @@
+name: r-neat-analyses
+channels:
+  - defaults
+dependencies:
+  - r-neat
+  - r-glue 
+  - r-dplyr
