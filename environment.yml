@@ -1,5 +1,6 @@
 name: r-neat-analyses
 channels:
+  - r
   - defaults
 dependencies:
   - nb_conda
