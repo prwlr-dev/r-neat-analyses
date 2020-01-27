@@ -5,3 +5,5 @@ dependencies:
   - r-neat
   - r-glue 
   - r-dplyr
+  - pandas
+  - glob
