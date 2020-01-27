@@ -14,6 +14,7 @@ install:
 
 script:
   - conda env create -f environment.yml
+  - python -m json.tool select_interaction_method_detection.ipynb
   - python -m json.tool r-neat-genetic-interactions-physical-interactions-no-ko-dups.ipynb
 
 notifications:
