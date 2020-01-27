@@ -6,4 +6,3 @@ dependencies:
   - r-glue 
   - r-dplyr
   - pandas
-  - glob
