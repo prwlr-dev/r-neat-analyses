@@ -1,7 +1,12 @@
 name: r-neat-analyses
 channels:
+  - r
   - defaults
 dependencies:
+  - nb_conda
+  - r-irkernel
+  - ipykernel
   - r-neat
   - r-glue 
   - r-dplyr
+  - pandas
