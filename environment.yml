@@ -4,8 +4,7 @@ channels:
   - defaults
 dependencies:
   - nb_conda
-  - ipykernel
+  - r-irkernel
   - r-neat
   - r-glue 
   - r-dplyr
-  - pandas
